@@ -171,13 +171,18 @@
           eine Vulva und Männer einen Penis haben und Frauen Männer lieben und
           Männer Frauen. Die Realität ist allerdings sehr viel bunter und
           vielfältiger und lässt sich nicht so einfach nach dieser
-          heteronormativen (Hä, was ist denn das? Hier erfährst du mehr.) Logik
-          ordnen. Heutzutage wird „queer“ oft als positive Selbstbezeichnung und
-          Sammelbegriff für verschiedene sexuelle Orientierungen und
-          geschlechtliche Identitäten verwendet. Das Buchstabenkürzel LSBTIQ ist
-          ein Sammelbegriff für die Vielfalt und Unterschiedlichkeit queerer
-          Identitäten und Orientierungen. Erfahre hier, was genau damit gemeint
-          ist.
+          heteronormativen
+          <a href="#" title="Heteronormativität" onclick="openModal('modal-5')">
+            (Hä, was ist denn das? Hier erfährst du mehr.)
+          </a>
+          Logik ordnen. Heutzutage wird „queer“ oft als positive
+          Selbstbezeichnung und Sammelbegriff für verschiedene sexuelle
+          Orientierungen und geschlechtliche Identitäten verwendet. Das
+          Buchstabenkürzel LSBTIQ ist ein Sammelbegriff für die Vielfalt und
+          Unterschiedlichkeit queerer Identitäten und Orientierungen.
+          <a href="#" title="LSBTIQ" onclick="openModal('modal-2')">
+            Erfahre hier, was genau damit gemeint ist.
+          </a>
         </p>
       </div>
 
@@ -278,9 +283,11 @@
           zweigeschlechtlichen&#8203;/&#8203;binären Ordnung: Männer lieben
           Frauen. Frauen lieben Männer. Punkt. Gähn! Gleich drei Dinge daran
           sind viel zu restriktiv, eng und schlicht am Leben vorbei gedacht: es
-          ist heteronormativ (Hä, was ist denn das? Hier erfährst du mehr!), es
-          gibt mehr geschlechtliche Identitäten als Mann und Frau und es gibt
-          mehr Formen sexueller Orientierungen als Heterosexualität.
+          ist heteronormativ
+          <a href="#" title="Heteronormativität" onclick="openModal('modal-5')">
+            (Hä, was ist denn das? Hier erfährst du mehr!) </a
+          >, es gibt mehr geschlechtliche Identitäten als Mann und Frau und es
+          gibt mehr Formen sexueller Orientierungen als Heterosexualität.
         </p>
       </div>
 
@@ -515,6 +522,11 @@
 
       var markerLayer = L.layerGroup(markers).addTo(map);
       map.removeLayer(markerLayer);
+
+      function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        map.openModal({ content: modal.innerHTML });
+      }
 
       // layer Control to show/hide markers
       var layerControl = document.getElementById("layerControl");
