@@ -133,6 +133,51 @@
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
         border-radius: 50%;
       }
+
+      .block-video_link {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .block-video_link a {
+        position: relative;
+        display: block;
+        width: 100%;
+      }
+
+      .block-video_link__blackbg {
+        display: block;
+        width: 100%;
+        padding-bottom: 56.25%;
+        background: black;
+      }
+
+      .block-video_link img {
+        width: 100%;
+        height: auto;
+      }
+
+      .playbutton {
+        position: absolute;
+        width: 90px;
+        top: calc(50% - 50px);
+        left: calc(50% - 45px);
+        pointer-events: none;
+      }
+
+      .playbutton circle {
+        fill: rgba(35,15,15, 0.8);
+        transition: fill .5s ease;
+      }
+
+      .playbutton__inner {
+        fill: white;
+      }
+
+      .block-video_link a:hover .playbutton circle,
+      .playbutton:hover circle {
+        fill: rgba(254,0,0, 0.8);
+      }
     </style>
   </head>
 
@@ -454,6 +499,42 @@
           haben außerdem hier auf der Website einige queere Orte und
           Anlaufstellen in Niedersachsen zusammen getragen.
         </p>
+      </div>
+
+      <div
+        id="modal-9"
+        data-x="400"
+        data-y="6200"
+        data-title="Kurzfilm: Normal"
+      >
+        <h2>Kurzfilm: Normal</h2>
+        <div class="block-video_link">
+          <a target="_blank" href="https://www.youtube.com/watch?v=X_N6Vyvp56M">
+            <img alt="" height="397" src="./images/kurzfilm-normal.jpg" width="600">
+            <svg class="playbutton" width="114.29" height="114.29" viewBox="0 0 114.29 114.29">
+              <circle cx="57.14" cy="57.14" r="57.14"></circle>
+              <path class="playbutton__inner" d="M48.24 39.68a2 2 0 0 0-2 2l-.03 27.91a2 2 0 0 0 3.05 1.7L72.3 57.33a2 2 0 0 0 0-3.4l-23-13.95a2 2 0 0 0-1.05-.3z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div
+        id="modal-10"
+        data-x="5360"
+        data-y="2930"
+        data-title="Kurzfilm: Fatima"
+      >
+        <h2>Kurzfilm: Fatima</h2>
+        <div class="block-video_link">
+          <a target="_blank" href="https://www.youtube.com/watch?v=uKXbhqMxA_8">
+            <img alt="" height="397" src="./images/kurzfilm-fatima.jpg" width="600">
+            <svg class="playbutton" width="114.29" height="114.29" viewBox="0 0 114.29 114.29">
+              <circle cx="57.14" cy="57.14" r="57.14"></circle>
+              <path class="playbutton__inner" d="M48.24 39.68a2 2 0 0 0-2 2l-.03 27.91a2 2 0 0 0 3.05 1.7L72.3 57.33a2 2 0 0 0 0-3.4l-23-13.95a2 2 0 0 0-1.05-.3z"></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
 
